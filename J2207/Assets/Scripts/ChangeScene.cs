@@ -9,4 +9,8 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneId);
     }
+
+    public void QuitGame(){
+        Application.Quit();
+    }
 }

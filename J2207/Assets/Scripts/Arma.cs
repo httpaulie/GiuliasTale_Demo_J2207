@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class Arma : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     public GameObject Bala;
     public Transform NasceBala;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+ 
     void Update()
     {
         mirar();
         atirar();
-        
     }
 
     void mirar()
@@ -34,9 +28,12 @@ public class Arma : MonoBehaviour
 
     void atirar()
     {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            Instantiate(Bala, NasceBala.position, transform.rotation);
+        if(PauseMenu.GameIsPaused == false){
+            if(Input.GetButtonDown("Fire1"))
+            {
+                Instantiate(Bala, NasceBala.position, transform.rotation);
+            }
         }
+        
     }
 }
