@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     {
         move();
         Animation();
+        CameraFollow();
     }
 
     void move()
@@ -39,5 +40,10 @@ public class Player : MonoBehaviour
         anim.SetBool("mouseDown", (offset.y<-50));
         anim.SetBool("mouseRight", (offset.x>50));
         anim.SetBool("mouseLeft", (offset.x<-50));
+    }
+
+    void CameraFollow()
+    {
+        CameraPosition.instance.SetPosition(new Vector2(transform.position.x, transform.position.y));
     }
 }
