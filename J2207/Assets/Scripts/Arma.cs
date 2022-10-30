@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class Arma : MonoBehaviour
 {
+    public bool CanShoot;
+    private int coolDown;
     public PauseMenu pauseMenu;
     public GameObject Bala;
-    public Transform NasceBala;
+    public Transform NasceBala1;
+    public Transform NasceBala2;
+    public Transform NasceBala3;
  
+    void Start()
+    {
+        CanShoot = true;
+        coolDown = 0;
+    }
+
     void Update()
     {
         mirar();
@@ -29,9 +39,21 @@ public class Arma : MonoBehaviour
     void atirar()
     {
         if(PauseMenu.GameIsPaused == false){
-            if(Input.GetButtonDown("Fire1"))
+            if( CanShoot && Input.GetButtonDown("Fire1"))
             {
-                Instantiate(Bala, NasceBala.position, transform.rotation);
+                CanShoot = false;
+                Instantiate(Bala, NasceBala1.position, transform.rotation);
+                Instantiate(Bala, NasceBala2.position, NasceBala2.rotation);
+                Instantiate(Bala, NasceBala3.position, NasceBala3.rotation);
+            }
+            if( CanShoot == false)
+            {
+                ++coolDown;
+                if(coolDown == 60)
+                {
+                    CanShoot = true;
+                    coolDown = 0;
+                }
             }
         }
         
