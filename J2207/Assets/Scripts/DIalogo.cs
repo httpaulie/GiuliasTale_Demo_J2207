@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class DIalogo : MonoBehaviour
 {
-    SpriteRenderer sprite;
-    public GameObject Player;
-    public GameObject NPC;
+    public static bool dialogPause = false;
+    public GameObject DialogMenuUI;
+    private Player player;
     [SerializeField] float distancia;
-    // Start is called before the first frame update
+
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Distancia();
@@ -22,11 +21,36 @@ public class DIalogo : MonoBehaviour
 
     void Distancia()
     {
-        distancia = Vector2.Distance(NPC.transform.position, Player.transform.position);
+        distancia = Vector2.Distance(player.transform.position, gameObject.transform.position);
 
-        if(distancia < 1.5)
+        if(distancia < 1.5 )
         {
-            sprite.enabled = true;
-        }else sprite.enabled = false;
+            if(Input.GetKeyDown(KeyCode.F))
+            {
+                if(dialogPause)
+                {
+                    Resume();
+                } else
+                {
+                    Pause();
+                }
+
+            }
+        }
     }
+
+    public void Resume()
+    {
+        DialogMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        dialogPause = false;
+    }
+
+    void Pause()
+    {
+        DialogMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        dialogPause = true;
+    }
+
 }
