@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
+    Animator anim;
     [SerializeField] float speed;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+        anim = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed);

@@ -36,10 +36,7 @@ public class Player : MonoBehaviour
 
         Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
 
-        anim.SetBool("mouseUp", (offset.y>30));
-        anim.SetBool("mouseDown", (offset.y<-30));
-        anim.SetBool("mouseRight", (offset.x>30));
-        anim.SetBool("mouseLeft", (offset.x<-30));
+        anim.SetBool("IsMoving", (Mathf.Abs(movimento.x)>0 || Mathf.Abs(movimento.y)>0));
     }
 
     void CameraFollow()
