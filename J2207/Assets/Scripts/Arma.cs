@@ -7,12 +7,12 @@ public class Arma : MonoBehaviour
     public bool CanShoot;
     public bool gamePaused;
     public PauseMenu pauseMenu;
-    public DIalogo dialogoPause;
     public GameObject Bala;
     public Transform NasceBala1;
     public Transform NasceBala2;
     public Transform NasceBala3;
     private int coolDown;
+    public DialogControl dc;
  
     void Start()
     {
@@ -64,11 +64,10 @@ public class Arma : MonoBehaviour
             CanShoot = false;
         }
 
-        if(DIalogo.dialogPause == true)
+        if(DialogControl.dialogueTrue == true)
         {
             CanShoot = false;
-        }
-        
+        }   
         
     }
 }
