@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+public class DialogueCutscene : MonoBehaviour
 {
     //public Sprite profile;
     public string[] speechText;
@@ -26,11 +26,10 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if(DialogControl.dialogueTrue == false){
-            if(onRadius && Input.GetKeyDown(KeyCode.F))
-            {
-                dc.Speech( speechText, actorName);           
-            }
+        if(onRadius)
+        {
+            dc.Speech( speechText, actorName);
+            Destroy(gameObject);
         }
     }
 

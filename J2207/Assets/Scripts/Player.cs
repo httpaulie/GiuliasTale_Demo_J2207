@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D playerRb;
     public float speed = 5f;
     Vector2 movimento;
+    private DialogControl dialog;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(DialogControl.dialogueTrue == false){
         move();
+        }
         Animation();
         CameraFollow();
     }

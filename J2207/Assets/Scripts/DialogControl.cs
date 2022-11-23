@@ -15,18 +15,20 @@ public class DialogControl : MonoBehaviour
     [Header("Settings")]
     public float typingSpeed;
     private string[] sentences;
+    private string[] Actors;
     private int index;
-    
 
-    public void Speech( string[] txt, string actorName)
+
+    public void Speech(string[] txt, string[] actorName)
     {
         dialogueObj.SetActive(true);
         dialogueTrue = true;
         //profile.sprite = p;
         sentences = txt;
-        actorNameText.text = actorName;
+        //actorNameText.text = actorName;
+        Actors = actorName;
         StartCoroutine(TypeSentence());
-
+        NameSentence();
     }
 
     IEnumerator TypeSentence()
@@ -37,19 +39,32 @@ public class DialogControl : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
     }
+    private void NameSentence()
+    {
+        foreach (char letter in Actors[index].ToCharArray())
+        {
+            actorNameText.text += letter;
+            //yield return null;
+        }
+    }
 
     public void NextSentence()
     {
-        if(speechText.text == sentences[index])
+        if (speechText.text == sentences[index])
         {
-            if(index < sentences.Length - 1)
+            if (index < sentences.Length - 1)
             {
                 index++;
                 speechText.text = "";
+                actorNameText.text = "";
                 StartCoroutine(TypeSentence());
+                //StartCoroutine(NameSentence());
+                NameSentence();
+
             }
             else
             {
+                actorNameText.text = "";
                 speechText.text = "";
                 index = 0;
                 dialogueObj.SetActive(false);
@@ -58,3 +73,5 @@ public class DialogControl : MonoBehaviour
         }
     }
 }
+
+
