@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Portas : MonoBehaviour
 {
-    private Player player;
-
-    private void Start()
-    {
-        player = GetComponent<Player>();
-    }
+    public GameObject player;
+    public GameObject door;
     public void OnTriggerStay2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && Input.GetKeyDown(KeyCode.F))
+        if(other.CompareTag("Player"))
         {
-            player.transform.position = new Vector3(0f, 2f, 0f);
+            if(Input.GetKeyDown(KeyCode.F))
+            player.transform.position = new Vector2(door.transform.position.x, door.transform.position.y);
         }
     }
 }

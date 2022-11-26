@@ -7,6 +7,8 @@ public class Dialogue : MonoBehaviour
     //public Sprite profile;
     public string[] speechText;
     public string[] actorName;
+    public string[] speechText1;
+    public string[] actorName1;
 
     public LayerMask playerLayer;
     public float radius;
@@ -26,10 +28,11 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if(DialogControl.dialogueTrue == false){
+        if(DialogControl.dialogueTrue == false)
+        {
             if(onRadius && Input.GetKeyDown(KeyCode.F))
             {
-                dc.Speech( speechText, actorName);           
+                    dc.Speech(speechText, actorName);
             }
         }
     }

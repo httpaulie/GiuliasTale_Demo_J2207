@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.CompareTag("Bala"))
         {
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
             isAlive = false;
         }
 

@@ -123,6 +123,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11149288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11149289}
+  - component: {fileID: 11149291}
+  - component: {fileID: 11149290}
+  m_Layer: 6
+  m_Name: Porta Dormitorio sair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11149289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11149288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.391, y: -4.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682633198}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11149290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11149288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929604e2012c55b43a35b44b7e8ee6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1913751797}
+  door: {fileID: 1156453095}
+--- !u!61 &11149291
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11149288}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015283227, y: 0.024241567}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.049442, y: 0.70909333}
+  m_EdgeRadius: 0
 --- !u!1 &80583833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1947,8 @@ GameObject:
   m_Component:
   - component: {fileID: 138665742}
   - component: {fileID: 138665741}
-  m_Layer: 0
+  - component: {fileID: 138665743}
+  m_Layer: 6
   m_Name: "Pap\xE9is"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1913,10 +1987,39 @@ MonoBehaviour:
     que te ensinei.                                                                        
     Saudades,                                                                                          
     Ass: Seu pai.\u201D "
-  - "(relativamente triste) Droga\u2026 Sinto muito, pai\u2026 Acho que realmente
-    vamos ter muito o que conversar quando eu voltar, eu estou adiando isso h\xE1
-    tempo demais\u2026 "
+  - "Droga\u2026 Sinto muito, pai\u2026 Acho que realmente vamos ter muito o que
+    conversar quando eu voltar, eu estou adiando isso h\xE1 tempo demais\u2026 "
   actorName:
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - Giulia
+  speechText1:
+  - "\u201CSauda\xE7\xF5es, Gabriel.                                                                
+    Sabe que n\xE3o tenho costume de enviar muitas cartas, mas achei necess\xE1rio. "
+  - "Conversaram comigo sobre suas notas em Novilua, me disseram que elas t\xEAm
+    ca\xEDdo cada vez mais."
+  - "Tamb\xE9m fiquei sabendo que voc\xEA FALSIFICOU minha assinatura em um documento
+    de \u201Cmudan\xE7a de nome\u201D."
+  - "N\xE3o tens orgulho do nome que sua falecida m\xE3e lhe deu? E pior, falsificar
+    a minha assinatura? O que voc\xEA estava pensando quando fez isso? Fiquei muito
+    desapontado com voc\xEA."
+  - "Quando voltar, nas f\xE9rias, precisaremos ter uma conversa. E sobre suas notas,
+    lembre-se, entrar em Novilua foi um desafio que voc\xEA superou, mas permanecer
+    nela \xE9 um desafio ainda maior. "
+  - "E, apesar de tudo, voc\xEA \xE9 gigante, filho, sei que pode superar qualquer
+    desafio, n\xE3o se deixe abalar ou relaxar por estar em uma posi\xE7\xE3o de
+    conforto em uma escola de prest\xEDgio."
+  - "Tenho muito orgulho de quem est\xE1 se tornando, mas n\xE3o esque\xE7a dos valores
+    que te ensinei.                                                                        
+    Saudades,                                                                                          
+    Ass: Seu pai.\u201D "
+  - ...
+  actorName1:
   - "Carta da Fam\xEDlia"
   - "Carta da Fam\xEDlia"
   - "Carta da Fam\xEDlia"
@@ -1944,6 +2047,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &138665743
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138665740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &147357984
 GameObject:
   m_ObjectHideFlags: 0
@@ -7437,7 +7556,8 @@ GameObject:
   - component: {fileID: 640515320}
   - component: {fileID: 640515319}
   - component: {fileID: 640515318}
-  m_Layer: 0
+  - component: {fileID: 640515321}
+  m_Layer: 6
   m_Name: TarsilaSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7457,10 +7577,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechText:
-  - 
-  - 
-  - 
-  actorName: []
+  - "Preparada? N\xE3o esqueceu nada?"
+  - "Tudo pronto, n\xE3o esqueci nada, s\xF3 a hora\u2026 Desculpa, inclusive, sei
+    que t\xE1 se tornando frequente\u2026"
+  - "Relaxa, eu imagino que deve estar sendo dif\xEDcil depois da transi\xE7\xE3o\u2026
+    Al\xE9m disso, voc\xEA n\xE3o foi a \xFAnica que se atrasou, o Eric tamb\xE9m,
+    ele t\xE1 ocupado demais conversando sobre sabe-se l\xE1 o que com os amigos
+    dele. Mas enfim, como voc\xEA tem se sentido"
+  - "Tirando a ins\xF4nia e a constante sensa\xE7\xE3o de n\xE3o me encaixar? \u2026Bom,
+    como voc\xEA sabe, meus poderes est\xE3o bem fracos e isso me preocupa\u2026"
+  - "Voc\xEA acha que isso pode ser um efeito colateral do tratamento?"
+  - "N\xE3o sei, de verdade\u2026 Talvez? Digo, tem afetado a minha respira\xE7\xE3o
+    e isso complica um pouco na hora de conjurar mas, al\xE9m disso, eu n\xE3o sei
+    o porque afetaria\u2026 Ent\xE3o \xE9, inconclusivo."
+  - "Entendo\u2026 Bom, nesse caso, vai passar. Enfim, o Eric est\xE1 na perto das
+    escadas que levam para o Sal\xE3o Comunal. Pode ir na frente, eu vou procurar
+    um livro e encontro voc\xEAs l\xE1 embaixo. Se quiser falar com algu\xE9m, basta
+    apertar [F]."
+  actorName:
+  - Tarsila
+  - Giulia
+  - Tarsila
+  - Giulia
+  - Tarsila
+  - Giulia
+  - Tarsila
+  speechText1: []
+  actorName1: []
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -7505,7 +7648,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 6de8fbc48b5254145b97371af314f892, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7525,13 +7668,113 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640515317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.65, y: -7.49, z: 0}
+  m_LocalPosition: {x: 2.29, y: -7.38, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &640515321
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640515317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008909901, y: 0.44690597}
+  m_Size: {x: 1.1704735, y: 1.3758403}
+  m_Direction: 0
+--- !u!1 &647591408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647591409}
+  - component: {fileID: 647591410}
+  m_Layer: 3
+  m_Name: F
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &647591409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647591408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.247, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913751804}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &647591410
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647591408}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 7
+  m_Sprite: {fileID: 21300000, guid: a1fa7db60d320d54ba4efe91b7edbf8c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.54, y: 0.55}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &651151186
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,6 +8017,39 @@ RectTransform:
   m_AnchoredPosition: {x: 25, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &682633197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682633198}
+  m_Layer: 0
+  m_Name: Portas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682633198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682633197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.411747, y: 0.5308013, z: 0.03769072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 11149289}
+  - {fileID: 1156453096}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706574536
 GameObject:
   m_ObjectHideFlags: 0
@@ -9943,13 +10219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechText:
-  - "(cansada, depois desesperada) \u2026O qu\xEA?... S\xF3 mais cinco minutos\u2026
-    Espera, j\xE1 estamos atrasadas?! Droga, eu dormi demais de novo!! Desculpa,
-    Tarsila, s\xF3 um segundo! "
+  - "\u2026O qu\xEA?... S\xF3 mais cinco minutos\u2026 Espera, j\xE1 estamos atrasadas?!
+    Droga, eu dormi demais de novo!! Desculpa, Tarsila, s\xF3 um segundo! "
   - "Andou dormindo mal de novo? Tudo bem, eu vou estar aqui fora. Antes de sair,
     veja se n\xE3o esqueceu nada, chegaram algumas cartas para voc\xEA. E lembre-se:
     Aperte [F] para interagir com algum objeto, se quiser."
-  - "(mais calma, por\xE9m ainda agitada) T\xE1 certo, obrigada, voc\xEA \xE9 a melhor! "
+  - "T\xE1 certo, obrigada, voc\xEA \xE9 a melhor! "
   actorName:
   - Giulia
   - Tarsila
@@ -10409,6 +10684,79 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1156453095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156453096}
+  - component: {fileID: 1156453097}
+  - component: {fileID: 1156453098}
+  m_Layer: 6
+  m_Name: Porta Dormitorio entrar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1156453096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156453095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.36, y: -7.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682633198}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1156453097
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156453095}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.045539737, y: 0.022770166}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9791043, y: 0.74953127}
+  m_EdgeRadius: 0
+--- !u!114 &1156453098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156453095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929604e2012c55b43a35b44b7e8ee6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1913751797}
+  door: {fileID: 11149288}
 --- !u!1 &1187595796
 GameObject:
   m_ObjectHideFlags: 0
@@ -14985,6 +15333,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3c4f650afc70b4c84e50d58a6a8f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  radius: 1.5
+  F: {fileID: 647591408}
+  interactiveLayer:
+    serializedVersion: 2
+    m_Bits: 64
   playerRb: {fileID: 1913751801}
   speed: 6
 --- !u!212 &1913751803
@@ -15053,6 +15406,7 @@ Transform:
   m_Children:
   - {fileID: 1662871715}
   - {fileID: 1925271017}
+  - {fileID: 647591409}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

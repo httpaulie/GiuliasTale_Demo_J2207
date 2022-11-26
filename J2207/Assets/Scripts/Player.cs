@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float radius;
+    public GameObject F;
+    public LayerMask interactiveLayer;
+    bool onRadius;
     Animator anim;
     public Rigidbody2D playerRb;
     public float speed = 5f;
     Vector2 movimento;
     private DialogControl dialog;
-    // Start is called before the first frame update
+
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
+    void FixedUpdate()
+    {
+        Interact();
+    }
+
     void Update()
     {
         if(DialogControl.dialogueTrue == false){
@@ -23,6 +31,11 @@ public class Player : MonoBehaviour
         }
         Animation();
         CameraFollow();
+  
+        if(onRadius)
+        {
+            F.SetActive(true);
+        }else F.SetActive(false);
     }
 
     void move()
@@ -45,5 +58,24 @@ public class Player : MonoBehaviour
     void CameraFollow()
     {
         CameraPosition.instance.SetPosition(new Vector2(transform.position.x, transform.position.y));
+    }
+
+    public void Interact()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, interactiveLayer);
+
+        if(hit != null)
+        {
+            onRadius = true;
+        }
+        else
+        {
+            onRadius = false;
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }
