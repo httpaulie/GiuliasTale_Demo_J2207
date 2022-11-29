@@ -479,7 +479,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1998,36 +1998,8 @@ MonoBehaviour:
   - "Carta da Fam\xEDlia"
   - "Carta da Fam\xEDlia"
   - Giulia
-  speechText1:
-  - "\u201CSauda\xE7\xF5es, Gabriel.                                                                
-    Sabe que n\xE3o tenho costume de enviar muitas cartas, mas achei necess\xE1rio. "
-  - "Conversaram comigo sobre suas notas em Novilua, me disseram que elas t\xEAm
-    ca\xEDdo cada vez mais."
-  - "Tamb\xE9m fiquei sabendo que voc\xEA FALSIFICOU minha assinatura em um documento
-    de \u201Cmudan\xE7a de nome\u201D."
-  - "N\xE3o tens orgulho do nome que sua falecida m\xE3e lhe deu? E pior, falsificar
-    a minha assinatura? O que voc\xEA estava pensando quando fez isso? Fiquei muito
-    desapontado com voc\xEA."
-  - "Quando voltar, nas f\xE9rias, precisaremos ter uma conversa. E sobre suas notas,
-    lembre-se, entrar em Novilua foi um desafio que voc\xEA superou, mas permanecer
-    nela \xE9 um desafio ainda maior. "
-  - "E, apesar de tudo, voc\xEA \xE9 gigante, filho, sei que pode superar qualquer
-    desafio, n\xE3o se deixe abalar ou relaxar por estar em uma posi\xE7\xE3o de
-    conforto em uma escola de prest\xEDgio."
-  - "Tenho muito orgulho de quem est\xE1 se tornando, mas n\xE3o esque\xE7a dos valores
-    que te ensinei.                                                                        
-    Saudades,                                                                                          
-    Ass: Seu pai.\u201D "
-  - ...
-  actorName1:
-  - "Carta da Fam\xEDlia"
-  - "Carta da Fam\xEDlia"
-  - "Carta da Fam\xEDlia"
-  - "Carta da Fam\xEDlia"
-  - "Carta da Fam\xEDlia"
-  - "Carta da Fam\xEDlia"
-  - "Carta da Fam\xEDlia"
-  - Giulia
+  speechText1: []
+  actorName1: []
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -2705,7 +2677,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4906,7 +4878,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6701,7 +6673,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7602,8 +7574,11 @@ MonoBehaviour:
   - Tarsila
   - Giulia
   - Tarsila
-  speechText1: []
-  actorName1: []
+  speechText1:
+  - "Pode ir na frente, eu vou procurar um livro e encontro voc\xEAs l\xE1 embaixo.
+    Lembre-se, se quiser falar com algu\xE9m, basta apertar [F]."
+  actorName1:
+  - Tarsila
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -7628,7 +7603,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7743,7 +7718,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9047,7 +9022,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9575,7 +9550,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10253,7 +10228,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13334,7 +13309,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14263,7 +14238,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15360,7 +15335,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15463,7 +15438,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

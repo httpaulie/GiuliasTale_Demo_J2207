@@ -32,7 +32,14 @@ public class Dialogue : MonoBehaviour
         {
             if(onRadius && Input.GetKeyDown(KeyCode.F))
             {
-                    dc.Speech(speechText, actorName);
+                    
+                    if(DialogControl.Acabou == false)
+                    {
+                        dc.Speech(speechText, actorName);
+                    }else
+                     {
+                        dc.Speech(speechText1, actorName1);
+                     }
             }
         }
     }

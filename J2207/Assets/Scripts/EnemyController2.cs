@@ -5,13 +5,16 @@ using UnityEngine;
 public class EnemyController2 : MonoBehaviour
 {
     public Transform fogePonto;
+    public Transform avancaPonto;
     public float radius;
+    public float radius2;
     public float speed;
     public LayerMask playerLayer;
     GameObject Player;
     public static bool isAlive;
     private Health health;
     private bool onRadius;
+    private bool onRadius2;
 
     void Start()
     {
@@ -27,6 +30,10 @@ public class EnemyController2 : MonoBehaviour
         if(onRadius)
         {
             transform.position = Vector2.MoveTowards(transform.position, fogePonto.transform.position, speed*Time.deltaTime);
+        }
+        if(onRadius2 == false)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, avancaPonto.transform.position, speed*Time.deltaTime);
         }
     }
 
@@ -56,10 +63,22 @@ public class EnemyController2 : MonoBehaviour
         {
             onRadius = false;
         }
+
+        Collider2D hit2 = Physics2D.OverlapCircle(transform.position, radius2, playerLayer);
+
+        if(hit2 != null)
+        {
+            onRadius2 = true;
+        }
+        else
+        {
+            onRadius2 = false;
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
+        Gizmos.DrawWireSphere(transform.position, radius2);
     }
 }

@@ -11,12 +11,14 @@ public class DialogControl : MonoBehaviour
     public Text speechText;
     public Text actorNameText;
     public static bool dialogueTrue;
+    public static bool Acabou = false;
 
     [Header("Settings")]
     public float typingSpeed;
     private string[] sentences;
     private string[] Actors;
     private int index;
+    
 
 
     public void Speech(string[] txt, string[] actorName)
@@ -69,6 +71,7 @@ public class DialogControl : MonoBehaviour
                 index = 0;
                 dialogueObj.SetActive(false);
                 dialogueTrue = false;
+                Acabou = true;
             }
         }
     }
