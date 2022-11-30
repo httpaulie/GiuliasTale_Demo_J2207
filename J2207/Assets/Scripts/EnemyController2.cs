@@ -6,6 +6,7 @@ public class EnemyController2 : MonoBehaviour
 {
     public Transform fogePonto;
     public Transform avancaPonto;
+    Animator anim;
     public float radius;
     public float radius2;
     public float speed;
@@ -21,6 +22,7 @@ public class EnemyController2 : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         health = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
         isAlive = true;
+        anim = GetComponentInChildren<Animator>();
     }
 
 
@@ -35,6 +37,7 @@ public class EnemyController2 : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, avancaPonto.transform.position, speed*Time.deltaTime);
         }
+        anim.SetBool("IsMoving", onRadius == true || onRadius2 == false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
