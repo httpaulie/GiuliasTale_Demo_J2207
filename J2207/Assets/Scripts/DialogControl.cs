@@ -11,7 +11,6 @@ public class DialogControl : MonoBehaviour
     public Text speechText;
     public Text actorNameText;
     public static bool dialogueTrue;
-    public static bool Acabou = false;
 
     [Header("Settings")]
     public float typingSpeed;
@@ -25,9 +24,7 @@ public class DialogControl : MonoBehaviour
     {
         dialogueObj.SetActive(true);
         dialogueTrue = true;
-        //profile.sprite = p;
         sentences = txt;
-        //actorNameText.text = actorName;
         Actors = actorName;
         StartCoroutine(TypeSentence());
         NameSentence();
@@ -46,7 +43,6 @@ public class DialogControl : MonoBehaviour
         foreach (char letter in Actors[index].ToCharArray())
         {
             actorNameText.text += letter;
-            //yield return null;
         }
     }
 
@@ -60,7 +56,6 @@ public class DialogControl : MonoBehaviour
                 speechText.text = "";
                 actorNameText.text = "";
                 StartCoroutine(TypeSentence());
-                //StartCoroutine(NameSentence());
                 NameSentence();
 
             }
@@ -71,7 +66,6 @@ public class DialogControl : MonoBehaviour
                 index = 0;
                 dialogueObj.SetActive(false);
                 dialogueTrue = false;
-                Acabou = true;
             }
         }
     }

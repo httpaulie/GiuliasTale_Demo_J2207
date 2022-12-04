@@ -9,6 +9,7 @@ public class Dialogue : MonoBehaviour
     public string[] actorName;
     public string[] speechText1;
     public string[] actorName1;
+    public bool Acabou = false;
 
     public LayerMask playerLayer;
     public float radius;
@@ -33,9 +34,10 @@ public class Dialogue : MonoBehaviour
             if(onRadius && Input.GetKeyDown(KeyCode.F))
             {
                     
-                    if(DialogControl.Acabou == false)
+                    if(Acabou == false)
                     {
                         dc.Speech(speechText, actorName);
+                        Acabou = true;
                     }else
                      {
                         dc.Speech(speechText1, actorName1);

@@ -7,6 +7,7 @@ public class SkullGun : MonoBehaviour
     public GameObject Bala;
     public Transform NasceBala1;
     GameObject player;
+    EnemyController2 control;
     int tempopatirar;
 
     void Start()
@@ -14,11 +15,16 @@ public class SkullGun : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
+       if(DialogControl.dialogueTrue == false)
+       { 
+        if(EnemyController2.onRange == true)
+        {   
+            Shoot();
+        }
         Aim();
-        Shoot();
+       } 
     }
 
     void Aim()

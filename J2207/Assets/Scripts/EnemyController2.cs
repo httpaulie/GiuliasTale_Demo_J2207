@@ -9,6 +9,7 @@ public class EnemyController2 : MonoBehaviour
     Animator anim;
     public float radius;
     public float radius2;
+    public float radius3;
     public float speed;
     public LayerMask playerLayer;
     GameObject Player;
@@ -16,6 +17,8 @@ public class EnemyController2 : MonoBehaviour
     private Health health;
     private bool onRadius;
     private bool onRadius2;
+    public static bool onRange;
+    private int tookDamage;
 
     void Start()
     {
@@ -28,24 +31,34 @@ public class EnemyController2 : MonoBehaviour
 
     void Update()
     {
+       if(DialogControl.dialogueTrue == false)
+       {
         Interact();
-        if(onRadius)
+        if(onRange)
         {
-            transform.position = Vector2.MoveTowards(transform.position, fogePonto.transform.position, speed*Time.deltaTime);
-        }
-        if(onRadius2 == false)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, avancaPonto.transform.position, speed*Time.deltaTime);
+            if(onRadius)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, fogePonto.transform.position, speed*Time.deltaTime);
+            }
+            if(onRadius2 == false)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, avancaPonto.transform.position, speed*Time.deltaTime);
+            }
         }
         anim.SetBool("IsMoving", onRadius == true || onRadius2 == false);
+        if(tookDamage >= 3)
+        {
+            Destroy(gameObject);
+            isAlive = false;
+        }
+       } 
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Bala"))
         {
-            Destroy(gameObject);
-            isAlive = false;
+            ++tookDamage;
         }
 
         if(other.CompareTag("Player"))
@@ -77,11 +90,22 @@ public class EnemyController2 : MonoBehaviour
         {
             onRadius2 = false;
         }
+        Collider2D hit3 = Physics2D.OverlapCircle(transform.position, radius3, playerLayer);
+
+        if(hit3 != null)
+        {
+            onRange = true;
+        }
+        else
+        {
+            onRange = false;
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
         Gizmos.DrawWireSphere(transform.position, radius2);
+        Gizmos.DrawWireSphere(transform.position, radius3);
     }
 }

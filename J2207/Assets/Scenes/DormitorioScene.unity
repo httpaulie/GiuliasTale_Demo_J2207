@@ -1088,8 +1088,30 @@ MonoBehaviour:
   - "Carta da Fam\xEDlia"
   - "Carta da Fam\xEDlia"
   - Giulia
-  speechText1: []
-  actorName1: []
+  speechText1:
+  - "\u201CSauda\xE7\xF5es, Gabriel.                                                                
+    Sabe que n\xE3o tenho costume de enviar muitas cartas, mas achei necess\xE1rio. "
+  - "Conversaram comigo sobre suas notas em Novilua, me disseram que elas t\xEAm
+    ca\xEDdo cada vez mais."
+  - "Tamb\xE9m fiquei sabendo que voc\xEA FALSIFICOU minha assinatura em um documento
+    de \u201Cmudan\xE7a de nome\u201D."
+  - "N\xE3o tens orgulho do nome que sua falecida m\xE3e lhe deu? E pior, falsificar
+    a minha assinatura? O que voc\xEA estava pensando quando fez isso? Fiquei muito
+    desapontado com voc\xEA."
+  - "Quando voltar, nas f\xE9rias, precisaremos ter uma conversa. E sobre suas notas,
+    lembre-se, entrar em Novilua foi um desafio que voc\xEA superou, mas permanecer
+    nela \xE9 um desafio ainda maior. "
+  - 
+  - 
+  actorName1:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Acabou: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -1102,7 +1124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138665740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.28, y: -3.36, z: -1.6588652}
+  m_LocalPosition: {x: -15.1, y: 32.73, z: -1.6588652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12471,6 +12493,7 @@ MonoBehaviour:
     Lembre-se, se quiser falar com algu\xE9m, basta apertar [F]."
   actorName1:
   - Tarsila
+  Acabou: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -15160,7 +15183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024140322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.52, y: 3.17, z: 0}
+  m_LocalPosition: {x: -13.47, y: 39.24, z: 0}
   m_LocalScale: {x: 1.2921, y: 0.5695, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20349,7 +20372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913751797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.51, y: 39.01, z: 0}
+  m_LocalPosition: {x: -13.49, y: 39.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

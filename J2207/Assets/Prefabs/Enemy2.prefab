@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6924447934674456699}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foge
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2631061808759647169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.03, y: 0, z: 0}
+  m_LocalPosition: {x: 1.61, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4301533291686357950}
   - component: {fileID: 4301533291686357949}
   - component: {fileID: 3026263649806694147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy2Animations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 9f26298d6acd7fc4dbe65559ad96ede7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4301533292176410920}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NasceSkull
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -160,7 +160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4301533292176410921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.247, y: 0, z: 0}
+  m_LocalPosition: {x: -1.38, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -179,9 +179,9 @@ GameObject:
   - component: {fileID: 5638232980573648890}
   - component: {fileID: -2413018814716593824}
   - component: {fileID: -2861222758688657834}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +219,7 @@ MonoBehaviour:
   avancaPonto: {fileID: 4301533292176410920}
   radius: 5
   radius2: 8
+  radius3: 10
   speed: 4
   playerLayer:
     serializedVersion: 2
@@ -236,8 +237,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010850033, y: -0.20436826}
-  m_Size: {x: 1.0118525, y: 1.5346601}
+  m_Offset: {x: 0.03136007, y: -0.11207279}
+  m_Size: {x: 0.9708325, y: 1.2577738}
   m_Direction: 0
 --- !u!50 &-2861222758688657834
 Rigidbody2D:
@@ -271,7 +272,7 @@ GameObject:
   - component: {fileID: 4301533293190648041}
   - component: {fileID: 4301533293190648047}
   - component: {fileID: 4301533293190648040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
