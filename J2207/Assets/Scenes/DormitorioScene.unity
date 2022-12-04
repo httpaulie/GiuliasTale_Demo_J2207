@@ -1121,16 +1121,21 @@ MonoBehaviour:
   - "Quando voltar, nas f\xE9rias, precisaremos ter uma conversa. E sobre suas notas,
     lembre-se, entrar em Novilua foi um desafio que voc\xEA superou, mas permanecer
     nela \xE9 um desafio ainda maior. "
-  - 
-  - 
+  - "E, apesar de tudo, voc\xEA \xE9 gigante, filho, sei que pode superar qualquer
+    desafio, n\xE3o se deixe abalar ou relaxar por estar em uma posi\xE7\xE3o de
+    conforto em uma escola de prest\xEDgio."
+  - "Tenho muito orgulho de quem est\xE1 se tornando, mas n\xE3o esque\xE7a dos valores
+    que te ensinei.                                                                        
+    Saudades,                                                                                          
+    Ass: Seu pai.\u201D "
   actorName1:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
+  - "Carta da Fam\xEDlia"
   Acabou: 0
   playerLayer:
     serializedVersion: 2
@@ -18492,7 +18497,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  radius: 0.28
+  radius: 0.3
 --- !u!212 &1024140324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18553,7 +18558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024140322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.47, y: 39.24, z: 0}
+  m_LocalPosition: {x: -11.16, y: 39.24, z: 0}
   m_LocalScale: {x: 1.2921, y: 0.5695, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    //public Sprite profile;
     public string[] speechText;
     public string[] actorName;
     public string[] speechText1;
