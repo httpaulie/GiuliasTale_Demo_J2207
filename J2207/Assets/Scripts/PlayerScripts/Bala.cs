@@ -19,6 +19,10 @@ public class Bala : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collison)
     {
+        if(collison.TryGetComponent<GuardianController>(out var enemy))
+        {
+            enemy.lifeManager.TakeDamage(1);
+        }
         Destroy(gameObject);
     }
 }

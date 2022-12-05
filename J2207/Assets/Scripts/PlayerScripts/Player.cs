@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     Vector2 movimento;
     private DialogControl dialog;
+    public static bool Levou = false;
+    private int invencivel;
 
     void Start()
     {
@@ -36,6 +38,17 @@ public class Player : MonoBehaviour
         {
             F.SetActive(true);
         }else F.SetActive(false);
+
+        if(Levou)
+        {
+            ++invencivel;
+            if(invencivel == 120)
+            {
+                invencivel = 0;
+                Levou = false;
+            }
+        }
+        anim.SetBool("tookDamage", Levou);
     }
 
     void move()

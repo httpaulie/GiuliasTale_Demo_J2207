@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
     { if(DialogControl.dialogueTrue == false)
       {
         Interact();
-        if(tookDamage >=6)
+        if(tookDamage >=7)
         {
             isAlive = false;
             Destroy(gameObject);
@@ -52,9 +52,10 @@ public class EnemyController : MonoBehaviour
             ++tookDamage;
         }
 
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("Player") && Player.Levou == false)
         {
             --health.health;
+            Player.Levou = true;
         }
     }
 

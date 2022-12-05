@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraPosition : MonoBehaviour
 {
     public static CameraPosition instance;
-    // Start is called before the first frame update
+
     void Awake()
     {
       if(instance == null)
@@ -16,7 +16,7 @@ public class CameraPosition : MonoBehaviour
       }
     }
 
-    // Update is called once per frame
+
     public void SetPosition(Vector2 position)
     {
         transform.position = new Vector3(position.x, position.y, transform.position.z);

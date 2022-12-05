@@ -21277,7 +21277,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  radius: 0.3
+  radius: 1
 --- !u!212 &1024140324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21338,7 +21338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024140322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.16, y: 39.24, z: 0}
+  m_LocalPosition: {x: -13.52, y: 39.16, z: 0}
   m_LocalScale: {x: 1.2921, y: 0.5695, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

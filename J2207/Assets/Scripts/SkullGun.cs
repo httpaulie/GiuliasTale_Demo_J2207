@@ -8,6 +8,7 @@ public class SkullGun : MonoBehaviour
     public Transform NasceBala1;
     GameObject player;
     EnemyController2 control;
+    DialogControl dialogue;
     int tempopatirar;
 
     void Start()
@@ -19,10 +20,7 @@ public class SkullGun : MonoBehaviour
     {
        if(DialogControl.dialogueTrue == false)
        { 
-        if(EnemyController2.onRange == true)
-        {   
-            Shoot();
-        }
+        Shoot();
         Aim();
        } 
     }

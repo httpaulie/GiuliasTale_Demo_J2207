@@ -223,7 +223,7 @@ MonoBehaviour:
   speed: 4
   playerLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 264
 --- !u!70 &-2413018814716593824
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

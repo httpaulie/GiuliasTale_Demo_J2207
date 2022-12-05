@@ -10,12 +10,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - Interative
   - Enemy
-  - 
+  - Player
   - 
   - 
   - 
@@ -54,4 +54,7 @@ TagManager:
     locked: 0
   - name: Corners
     uniqueID: 802935577
+    locked: 0
+  - name: Player
+    uniqueID: 319026477
     locked: 0

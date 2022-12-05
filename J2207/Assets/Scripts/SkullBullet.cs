@@ -21,9 +21,10 @@ public class SkullBullet : MonoBehaviour
     {
         Destroy(gameObject);
 
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && Player.Levou == false)
         {
             --health.health;
+            Player.Levou = true;
         }
     }
 }
