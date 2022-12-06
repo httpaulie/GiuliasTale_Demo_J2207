@@ -520,7 +520,7 @@ Tilemap:
       e00: 3
       e01: 0
       e02: 0
-      e03: 0.5
+      e03: 0
       e10: 0
       e11: 3
       e12: 0
@@ -789,7 +789,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &8112396619469259784
+--- !u!114 &7135441239084168123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
