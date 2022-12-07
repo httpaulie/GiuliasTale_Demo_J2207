@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public string sceneName;
     public float radius;
     public GameObject F;
     public LayerMask interactiveLayer;
@@ -15,10 +17,12 @@ public class Player : MonoBehaviour
     private DialogControl dialog;
     public static bool Levou = false;
     private int invencivel;
+    Health health;
 
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        health = GetComponent<Health>();
     }
 
     void FixedUpdate()
@@ -49,6 +53,10 @@ public class Player : MonoBehaviour
             }
         }
         anim.SetBool("tookDamage", Levou);
+        if(health.health <= 0)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 
     void move()

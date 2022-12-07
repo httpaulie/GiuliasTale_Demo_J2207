@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Portas : MonoBehaviour
 {
-    public GameObject player;
+    GameObject player;
     public GameObject door;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public void OnTriggerStay2D(Collider2D other)
     {
         if(other.CompareTag("Player"))

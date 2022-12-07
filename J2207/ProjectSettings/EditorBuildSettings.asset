@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DormitorioScene.unity
     guid: 352eef026e031ca48a8d65791909fb33
+  - enabled: 1
+    path: Assets/Scenes/NoviluaFloor1.unity
+    guid: 916040833adbed246bfe8548dd11171c
+  - enabled: 1
+    path: Assets/Scenes/ForgottenCryptDungeon.unity
+    guid: 24ca9cb9cad4eaa48acc0ec54a13d115
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: daeea86180e47fc4085f4529fe828595
   m_configObjects: {}

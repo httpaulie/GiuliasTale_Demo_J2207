@@ -5,7 +5,7 @@ using UnityEngine;
 public class PuzzleBlocos : MonoBehaviour
 {
     public GameObject lugarCerto;
-    public float distancia;
+    float distancia;
     public static bool encaixou = false;
 
     void Update()

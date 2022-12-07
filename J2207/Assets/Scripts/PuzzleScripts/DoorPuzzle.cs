@@ -13,13 +13,13 @@ public class DoorPuzzle : MonoBehaviour
 
     void Start()
     {
-        
     }
 
     void Update()
     {
         if(PuzzleBlocos.encaixou && PuzzleBlocos1.encaixou1 && PuzzleBlocos2.encaixou2 && PuzzleBlocos3.encaixou3)
         {
+
             Porta.SetActive(true);
             Destroy(gameObject);
         }

@@ -6,10 +6,10 @@ public class DungeonDoor : MonoBehaviour
 {
     public DungeonDoorRange range;
     public GameObject Porta;
+    
 
-    void Start()
+    void Awake()
     {
-        
     }
 
 
@@ -18,7 +18,8 @@ public class DungeonDoor : MonoBehaviour
         if(DungeonDoorRange.onRadius == false)
         {
             Porta.SetActive(true);
-            Destroy(gameObject);
+            Destroy(gameObject, 0.1f);
         }
+        
     }
 }

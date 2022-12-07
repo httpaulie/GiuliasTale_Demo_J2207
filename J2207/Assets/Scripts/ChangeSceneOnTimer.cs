@@ -5,12 +5,10 @@ using UnityEngine;
 
 public class ChangeSceneOnTimer : MonoBehaviour
 {
-    public  float  changeTime;
     public string sceneName;
     void Update()
     {
-        changeTime -= Time.deltaTime;
-        if(changeTime <= 0)
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             SceneManager.LoadScene(sceneName);
         }

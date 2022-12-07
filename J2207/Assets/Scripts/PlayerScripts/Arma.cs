@@ -11,6 +11,7 @@ public class Arma : MonoBehaviour
     public Transform NasceBala1;
     public Transform NasceBala2;
     public Transform NasceBala3;
+    public static bool ganhouPoder = false;
     private int coolDown;
     public DialogControl dc;
  
@@ -41,18 +42,16 @@ public class Arma : MonoBehaviour
     void atirar()
     {
 
-        if( CanShoot && Input.GetButtonDown("Fire1"))
+        if( CanShoot && Input.GetButtonDown("Fire1") && ganhouPoder)
         {
             CanShoot = false;
             Instantiate(Bala, NasceBala1.position, transform.rotation);
-            //Instantiate(Bala, NasceBala2.position, NasceBala2.rotation);
-            //Instantiate(Bala, NasceBala3.position, NasceBala3.rotation);
         }
 
         if( CanShoot == false)
         {
             ++coolDown;
-            if(coolDown == 15)
+            if(coolDown == 30)
             {
                 CanShoot = true;
                 coolDown = 0;
