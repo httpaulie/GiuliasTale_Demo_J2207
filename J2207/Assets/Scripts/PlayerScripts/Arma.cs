@@ -13,7 +13,8 @@ public class Arma : MonoBehaviour
     public Transform NasceBala3;
     public static bool ganhouPoder = false;
     private int coolDown;
-    public DialogControl dc;
+    DialogControl dc;
+    public GameObject som;
  
     void Start()
     {
@@ -46,12 +47,14 @@ public class Arma : MonoBehaviour
         {
             CanShoot = false;
             Instantiate(Bala, NasceBala1.position, transform.rotation);
+            Instantiate(som, NasceBala1.position, transform.rotation);
+            
         }
 
         if( CanShoot == false)
         {
             ++coolDown;
-            if(coolDown == 30)
+            if(coolDown == 20)
             {
                 CanShoot = true;
                 coolDown = 0;

@@ -9,6 +9,7 @@ public class DoorPuzzle : MonoBehaviour
     PuzzleBlocos2 encaixou2;
     PuzzleBlocos3 encaixou3;
     public GameObject Porta;
+    public GameObject som;
 
 
     void Start()
@@ -19,7 +20,7 @@ public class DoorPuzzle : MonoBehaviour
     {
         if(PuzzleBlocos.encaixou && PuzzleBlocos1.encaixou1 && PuzzleBlocos2.encaixou2 && PuzzleBlocos3.encaixou3)
         {
-
+            Instantiate(som, transform.position, transform.rotation);
             Porta.SetActive(true);
             Destroy(gameObject);
         }

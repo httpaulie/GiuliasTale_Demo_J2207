@@ -12,6 +12,7 @@ public class GuardianSword : MonoBehaviour
     int coolDown;
     public float speed;
     public float speedBack;
+    public GameObject som;
     
     void Start()
     {
@@ -51,6 +52,7 @@ public class GuardianSword : MonoBehaviour
         {
             health.health--;
             Player.Levou = true;
+            Instantiate(som, transform.position, transform.rotation);
         }
     }
     

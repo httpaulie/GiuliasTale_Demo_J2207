@@ -7,6 +7,7 @@ public class Slot3 : MonoBehaviour
     private Inventory inventory;
     private Health health;
     public int i;
+    public GameObject som;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class Slot3 : MonoBehaviour
                 {
                 GameObject.Destroy(child.gameObject);
                 }
+                Instantiate(som, transform.position, transform.rotation);
                 ++health.health;
             }
         }

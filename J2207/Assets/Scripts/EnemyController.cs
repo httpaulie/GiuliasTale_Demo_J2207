@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
     private int tookDamage = 0;
     private Health health;
     private DialogControl dialog;
+    public GameObject som;
+    public GameObject som2;
 
     void Start()
     {
@@ -50,12 +52,14 @@ public class EnemyController : MonoBehaviour
         if(collision.CompareTag("Bala"))
         {
             ++tookDamage;
+            Instantiate(som2, transform.position, transform.rotation);
         }
 
         if(collision.CompareTag("Player") && Player.Levou == false)
         {
             --health.health;
             Player.Levou = true;
+            Instantiate(som, transform.position, transform.rotation);
         }
     }
 

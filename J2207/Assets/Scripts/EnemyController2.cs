@@ -19,6 +19,8 @@ public class EnemyController2 : MonoBehaviour
     private bool onRadius2;
     public static bool onRange;
     private int tookDamage;
+    public GameObject som;
+    public GameObject som2;
 
     void Start()
     {
@@ -59,11 +61,13 @@ public class EnemyController2 : MonoBehaviour
         if(other.CompareTag("Bala"))
         {
             ++tookDamage;
+            Instantiate(som2, transform.position, transform.rotation);
         }
 
         if(other.CompareTag("Player"))
         {
             --health.health;
+            Instantiate(som, transform.position, transform.rotation);
         }
     }
 

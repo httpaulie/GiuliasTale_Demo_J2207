@@ -13182,6 +13182,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283513400}
   m_CullTransparentMesh: 1
+--- !u!1 &307616847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307616849}
+  - component: {fileID: 307616848}
+  m_Layer: 0
+  m_Name: Musica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &307616848
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307616847}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5fa49110d0a5a78449d0d41429f366c7, type: 2}
+  m_audioClip: {fileID: 8300000, guid: a04d849446d1c344aa22b9207a44d8ed, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &307616849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307616847}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.97851, y: 2.985506, z: -0.23214293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315626257
 GameObject:
   m_ObjectHideFlags: 0
@@ -28840,6 +28968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i: 2
+  som: {fileID: 0}
 --- !u!114 &657204488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43898,6 +44027,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8101744911147458092, guid: 86561b842a6df7c4b92fd3c570ffc864, type: 3}
   m_PrefabInstance: {fileID: 1168989196}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1174288486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174288489}
+  - component: {fileID: 1174288488}
+  - component: {fileID: 1174288487}
+  m_Layer: 6
+  m_Name: Escada (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1174288487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174288486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3589f73c1b7a5a442a017950e2280b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechText:
+  - "Essa escada est\xE1 em manunten\xE7\xE3o"
+  - Melhor eu descer pela outra.
+  actorName:
+  - Giulia
+  - Giulia
+  speechText1:
+  - "Essa escada est\xE1 em manunten\xE7\xE3o"
+  - Melhor eu descer pela outra.
+  actorName1:
+  - Giulia
+  - Giulia
+  Acabou: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 264
+  radius: 1.5
+--- !u!58 &1174288488
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174288486}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.028422832, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.47157717
+--- !u!4 &1174288489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174288486}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.01, y: 28.52, z: 11.725243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178010968
 GameObject:
   m_ObjectHideFlags: 0
@@ -49684,6 +49891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i: 1
+  som: {fileID: 0}
 --- !u!114 &1332927206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61805,7 +62013,7 @@ MonoBehaviour:
   NasceBala1: {fileID: 457955375}
   NasceBala2: {fileID: 1790717323}
   NasceBala3: {fileID: 868240596}
-  dc: {fileID: 0}
+  som: {fileID: 0}
 --- !u!212 &1662871717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62877,6 +63085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i: 0
+  som: {fileID: 0}
 --- !u!114 &1706198688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66057,6 +66266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3c4f650afc70b4c84e50d58a6a8f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
   radius: 1.5
   F: {fileID: 647591408}
   interactiveLayer:

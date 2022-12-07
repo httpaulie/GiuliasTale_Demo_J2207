@@ -18,7 +18,7 @@ public class SkullGun : MonoBehaviour
 
     void Update()
     {
-       if(DialogControl.dialogueTrue == false)
+       if(DialogControl.dialogueTrue == false && PauseMenu.GameIsPaused == false)
        { 
         Shoot();
         Aim();

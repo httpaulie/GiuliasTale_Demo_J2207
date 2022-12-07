@@ -6,6 +6,7 @@ public class SkullBullet : MonoBehaviour
 { 
     [SerializeField] float speed;
     private Health health;
+    public GameObject som;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class SkullBullet : MonoBehaviour
         {
             --health.health;
             Player.Levou = true;
+            Instantiate(som, transform.position, transform.rotation);
         }
     }
 }

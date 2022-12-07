@@ -16,6 +16,7 @@ public class GuardianController : MonoBehaviour
     public static bool isAlive;
     private Health health;
     public static bool onRange;
+    public GameObject cristal;
 
     void Awake()
     {
@@ -24,6 +25,7 @@ public class GuardianController : MonoBehaviour
 
     private void HandleDie()
     {
+        cristal.SetActive(true);
         Destroy(gameObject);
     }
 

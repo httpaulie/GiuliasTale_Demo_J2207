@@ -7,6 +7,8 @@ public class PuzzleBlocos6 : MonoBehaviour
     public GameObject lugarCerto;
     public float distancia;
     public static bool encaixou6 = false;
+    public GameObject som;
+    int contador;
 
     void Update()
     {
@@ -16,5 +18,13 @@ public class PuzzleBlocos6 : MonoBehaviour
         {
             encaixou6 = true;
         }
+        if(encaixou6)
+        {
+            ++contador;
+            if(contador<=1)
+            {
+                Instantiate(som, transform.position, transform.rotation);
+            }
+        } 
     }
 }

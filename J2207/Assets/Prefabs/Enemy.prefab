@@ -56,6 +56,8 @@ MonoBehaviour:
   radius2: 10
   onRadius: 0
   onRadius2: 0
+  som: {fileID: 6971423984163256145, guid: 38a30b9ab0c7f6c418e1ff99526fc963, type: 3}
+  som2: {fileID: 2091340699346651313, guid: f1031a53737a55d44a4832019988e16c, type: 3}
 --- !u!70 &3471080552191328759
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -40,4 +40,7 @@ public class GuardianGun : MonoBehaviour
             }
         }   ++tempopatirar;  
     }
+
+        
+    
 }

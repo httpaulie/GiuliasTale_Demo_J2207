@@ -224,6 +224,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 264
+  som: {fileID: 6971423984163256145, guid: 38a30b9ab0c7f6c418e1ff99526fc963, type: 3}
+  som2: {fileID: 2091340699346651313, guid: f1031a53737a55d44a4832019988e16c, type: 3}
 --- !u!70 &-2413018814716593824
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
